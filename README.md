@@ -3,12 +3,12 @@ Lista de tarefas
 
 #### Tecnologias usadas
 * Javascript 
-* Css 
-* Html 
+* CSS3 
+* HTML5 
 
 #### Como rodar o projeto
 
-Basta abrir o arquivo index.hmtl em qualquer navegador web.
+Basta abrir o arquivo index.html em qualquer navegador web.
 
 #### Bugs
 
