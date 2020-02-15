@@ -1,22 +1,26 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=200px, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Lista de tarefas</title>
-    <link rel="stylesheet" href="estilo.css" />
-    <script src="todolist.js"></script>
-</head>
-<body>
-    <div id="todo_app">
-        <div id="field">
-            <input id="#input" type="text" />
-            <button id="add_item">+</button>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=200px, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Lista de Tarefas</title>
+        <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="estilo.css">
+        <script src="todolist.js"></script>
+    </head>
+    <body>
+        <div id="todo_app">
+            <h1 class="titulo">Things To Do:</h1>
+            <div id="field">
+                <label for="tast">Task</label>
+                <input id="#task" type="text" placeholder="What to do?">
+                <button id="add_item">+</button>
+            </div>
+            <div id="escopo">
+                <ul id="tarefas"></ul>
+            </div>
         </div>
-        <div>
-            <ul id="tarefas"></ul>
-        </div>
-    </div>
-</body>
+    </body>
 </html>

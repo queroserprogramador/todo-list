@@ -2,11 +2,9 @@ var tarefas = [];
 
 function getTemplateItem(texto, indice) {
     return `<li>
-    <span>
-        <span>${texto}</span>
-        <button value="${indice}">-</button>
-    </span>
-</li>`;
+                <span>${texto}</span>
+                <button value="${indice}">-</button>
+            </li>`;
 }
 
 function adicionarItem(texto) {
@@ -35,11 +33,19 @@ function refreshTela() {
             removerItem(parseInt(e.target.value));
         });    
     }
+    botoes = document.getElementsByTagName("button");
+    folhaEstilo = document.styleSheets[1];
+    
+    botoes.onclick = function(){
+        regrasDiv.style.background = "black";
+        regrasDiv.style.color = "green";
+        regrasDiv.style.border = "3px solid blue";
+    }
 }
 
 document.addEventListener('DOMContentLoaded' , function () {
     var botaoAddItem = document.getElementById('add_item');
-    var input = document.getElementById('#input');
+    var input = document.getElementById('#task');
     botaoAddItem.addEventListener('click', function (e) {
         adicionarItem(input.value);
         input.value = "";
